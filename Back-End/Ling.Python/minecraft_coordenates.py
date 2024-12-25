@@ -55,7 +55,21 @@ def pegar_coordenadas(server, nome, coor_x, coor_y, coor_z) -> str:
 
 def main():
     """Início do programa."""
+#------DECLARAÇÕES
 
+#------COMANDOS
+    #Verifica se há um autor para o programa
+    while True:
+        if AUTHOR == "" or AUTHOR is None:
+            print("\nPor favor, defina o autor do programa na linha 2.\n")
+
+        else:
+            print(f"OBRIGADO PELA PREFERÊNCIA, {AUTHOR}!")
+            print("Se deseja mudar o autor, vá para a linha 9.")
+            time.sleep(3)
+            print("\nIniciando o programa...\n")
+            time.sleep(3)
+            break
 
 
 if __name__ == "__main__":
