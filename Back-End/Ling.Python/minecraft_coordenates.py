@@ -1,12 +1,10 @@
-"""Pegar Coordenadas do Minecraft."""
-#---------Imports
+"""Programa para guardar Coordenadas do Minecraft."""
 import os
 import time
 import customtkinter as ctk
 from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-#---------Declarações Globais
 AUTHOR = "Marlon"
 
 db_path = os.path.join(os.path.dirname(__file__), "Coordenadas_Mine.db")
@@ -38,10 +36,8 @@ class Coordenadas(Base):
         self.coor_y = coor_y
         self.coor_z = coor_z
 
-#Criando as tabelas no BD
 Base.metadata.create_all(bind=db)
 
-#Conectando com o BD
 Session = sessionmaker(bind=db)
 session = Session()
 
@@ -55,10 +51,6 @@ def pegar_coordenadas(server, nome, coor_x, coor_y, coor_z) -> str:
 
 def main():
     """Início do programa."""
-#------DECLARAÇÕES
-
-#------COMANDOS
-    #Verifica se há um autor para o programa
     while True:
         if AUTHOR == "" or AUTHOR is None:
             print("\nPor favor, defina o autor do programa na linha 2.\n")
@@ -70,6 +62,20 @@ def main():
             print("\nIniciando o programa...\n")
             time.sleep(3)
             break
+
+    janela = ctk.CTk()
+    janela.title("Coletor de Coordenadas")
+    janela.geometry("600x400")
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
