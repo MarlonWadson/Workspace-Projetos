@@ -52,3 +52,11 @@ def pegar_coordenadas(server, nome, coor_x, coor_y, coor_z) -> str:
     session.commit()
 
     return f"Coordenadas de {nome} foram salvas com sucesso no servidor {server}!"
+
+def main():
+    """Início do programa."""
+
+
+
+if __name__ == "__main__":
+    main()
