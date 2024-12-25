@@ -79,7 +79,8 @@ def main():
     local_entry = ctk.CTkEntry(janela, placeholder_text="Nome da coordenada")
     local_entry.pack(pady=5)
 
-
+    coor_x_entry = ctk.CTkEntry(janela, placeholder_text="Coordenada X")
+    coor_x_entry.pack(pady=5)
 
 
 if __name__ == "__main__":
