@@ -104,6 +104,6 @@ def main():
     botao = ctk.CTkButton(janela, text="Coletar Coordenadas", command=coletar_e_exibir)
     botao.pack(pady=10)
 
-    
+    janela.mainloop()
 if __name__ == "__main__":
     main()
