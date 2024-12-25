@@ -67,7 +67,8 @@ def main():
     janela.title("Coletor de Coordenadas")
     janela.geometry("600x400")
 
-
+    header = ctk.CTkLabel(janela, text="Coleta de Dados", font=("Times New Roman", 20))
+    header.pack(pady=10)
 
 
 
