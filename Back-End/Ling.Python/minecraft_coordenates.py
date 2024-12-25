@@ -44,3 +44,11 @@ Base.metadata.create_all(bind=db)
 #Conectando com o BD
 Session = sessionmaker(bind=db)
 session = Session()
+
+def pegar_coordenadas(server, nome, coor_x, coor_y, coor_z) -> str:
+    """Função para pegar as coordenadas do Minecraft."""
+    coordenada = Coordenadas(server=server, local=nome, coor_x=coor_x, coor_y=coor_y, coor_z=coor_z)
+    session.add(coordenada)
+    session.commit()
+
+    return f"Coordenadas de {nome} foram salvas com sucesso no servidor {server}!"
