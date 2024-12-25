@@ -1,4 +1,4 @@
-"""ARQUIVO DE DOCUMENTAÇÃO E DESCRIÇÃO DAS FUNCIONALIDADES DO PROJETO PARA ~>index.py"""
+"""ARQUIVO DE DOCUMENTAÇÃO E DESCRIÇÃO DAS FUNCIONALIDADES DO PROJETO PARA SUPERMARKET"""
 import uuid
 from datetime import datetime, timedelta
 from win10toast import ToastNotifier
