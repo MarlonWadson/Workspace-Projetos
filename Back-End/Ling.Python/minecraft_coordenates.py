@@ -88,5 +88,13 @@ def main():
     coor_z_entry = ctk.CTkEntry(janela, placeholder_text="Coordenada Z")
     coor_z_entry.pack(pady=5)
 
+    def coletar_e_exibir():
+        server = server_entry.get()
+        nome = local_entry.get()
+        coor_x = coor_x_entry.get()
+        coor_y = coor_y_entry.get()
+        coor_z = coor_z_entry.get()
+
+        
 if __name__ == "__main__":
     main()
