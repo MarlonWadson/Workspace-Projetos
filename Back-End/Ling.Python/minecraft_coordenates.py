@@ -76,7 +76,8 @@ def main():
     server_entry = ctk.CTkEntry(janela, placeholder_text="Servidor")
     server_entry.pack(pady=5)
 
-
+    local_entry = ctk.CTkEntry(janela, placeholder_text="Nome da coordenada")
+    local_entry.pack(pady=5)
 
 
 
