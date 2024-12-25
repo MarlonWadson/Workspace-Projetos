@@ -12,3 +12,10 @@ AUTHOR = "Marlon"
 db_path = os.path.join(os.path.dirname(__file__), "Coordenadas_Mine.db")
 db = create_engine(f"sqlite:///{db_path}") #Criando o arquivo do BD
 Base = declarative_base()
+
+#Criando as tabelas no BD
+Base.metadata.create_all(bind=db)
+
+#Conectando com o BD
+Session = sessionmaker(bind=db)
+session = Session()
