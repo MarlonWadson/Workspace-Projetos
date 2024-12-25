@@ -95,6 +95,15 @@ def main():
         coor_y = coor_y_entry.get()
         coor_z = coor_z_entry.get()
 
-        
+        if not server or not nome or not coor_x or not coor_y or not coor_z:
+            dados.configure(text="Todos os campos devem ser preenchidos!")
+        else:
+            resultado = pegar_coordenadas(server, nome, coor_x, coor_y, coor_z)
+            dados.configure(text=resultado)
+
+    botao = ctk.CTkButton(janela, text="Coletar Coordenadas", command=coletar_e_exibir)
+    botao.pack(pady=10)
+
+    
 if __name__ == "__main__":
     main()
