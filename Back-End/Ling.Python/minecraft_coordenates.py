@@ -70,7 +70,8 @@ def main():
     header = ctk.CTkLabel(janela, text="Coleta de Dados", font=("Times New Roman", 20))
     header.pack(pady=10)
 
-
+    dados = ctk.CTkLabel(janela, text="")
+    dados.pack(pady=10)
 
 
 
