@@ -73,7 +73,8 @@ def main():
     dados = ctk.CTkLabel(janela, text="")
     dados.pack(pady=10)
 
-
+    server_entry = ctk.CTkEntry(janela, placeholder_text="Servidor")
+    server_entry.pack(pady=5)
 
 
 
