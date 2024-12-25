@@ -85,5 +85,8 @@ def main():
     coor_y_entry = ctk.CTkEntry(janela, placeholder_text="Coordenada Y")
     coor_y_entry.pack(pady=5)
 
+    coor_z_entry = ctk.CTkEntry(janela, placeholder_text="Coordenada Z")
+    coor_z_entry.pack(pady=5)
+
 if __name__ == "__main__":
     main()
